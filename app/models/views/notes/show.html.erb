@@ -1,0 +1,6 @@
+<div class="<%= @note.color %> note">
+  <h1><%= @note.title %></h1>
+  <p><%= @note.body %></p>
+</div>
+<%= link_to 'Edit Note', edit_note_path(@note) %>
+<%= link_to 'Delete Note', @note, method: :delete %>

@@ -1,23 +1,18 @@
 require 'test_helper'
 
 class NotesControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get notes_index_url
+  test "should get title" do
+    get notes_title_url
     assert_response :success
   end
 
-  test "should get show" do
-    get notes_show_url
+  test "should get body" do
+    get notes_body_url
     assert_response :success
   end
 
-  test "should get edit" do
-    get notes_edit_url
-    assert_response :success
-  end
-
-  test "should get new" do
-    get notes_new_url
+  test "should get color" do
+    get notes_color_url
     assert_response :success
   end
 

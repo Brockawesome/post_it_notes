@@ -13,9 +13,9 @@
 ActiveRecord::Schema.define(version: 20180221014509) do
 
   create_table "notes", force: :cascade do |t|
+    t.string "color"
     t.string "title"
-    t.text "body"
-    t.datetime "time_created"
+    t.string "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

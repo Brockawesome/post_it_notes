@@ -1,0 +1,13 @@
+<%= @note.id ? 'Edit Note' : 'Create Note' %>
+<%= form_for @note do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br />
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+  <br />
+  <!-- <%= f.label :color %> -->
+  <%= f.select :color, options_for_select(['yellow', 'red', 'green', 'blue', 'purple']) %>
+  <br />
+  <%= f.submit %>
+<% end %>
